@@ -1,57 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilos.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Workshop de Tecnologia</title>
+ <style>
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ body {
+   font-family: Arial, sans-serif;
+   background: #f4f4f4;
+ }
+ .info-bar {
+   background: #222;
+   color: white;
+   padding: 0.5rem 1rem;
+   text-align: center;
+   font-size: 0.9rem;
+ }
+ .banner {
+  background: url("https://picsum.photos/1200/400") no-repeat center/cover;
+   height: 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   color: white;
+   text-shadow: 1px 1px 2px black;
+ }
+ .banner h1 {
+   font-size: 2.5rem;
+ }
+ .banner p {
+   font-size: 1.2rem;
+ }
+ .descricao {
+   max-width: 800px;
+   margin: 2rem auto;
+   padding: 1rem;
+   background: white;
+ }
+ .atracoes {
+   display: flex;
+   gap: 1rem;
+   justify-content: center;
+   flex-wrap: wrap;
+   padding: 2rem;
+ }
+ .card {
+   background: white;
+   width: 250px;
+   border: 1px solid #ddd;
+   padding: 1rem;
+   text-align: center;
+ }
+ .card img {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+ }
+ </style>
 </head>
 <body>
-     <!-- <div class="top-bar">
-    📍 São Paulo | 📅 21 de Setembro | 🕒 10h às 18h
-  </div> -->
-  
+ <div class="info-bar">
+   📍 Local: IFC-Videira | 🗓 Data: 25/10/2025 | ⏰ Horário: 14h
+ </div>
 
-  <!-- Banner Principal -->
-  <section class="banner">
-    <h1>Workshop de Tecnologia - 2025 </h1>
-  </section>
+ <section class="banner">
+   <h1>Workshop de Tecnologia</h1>
+   <p>25 de Outubro de 2025</p>
+ </section>
 
-  <!-- Descrição -->
+ <section class="descricao">
+   <h2>Sobre o Evento</h2>
+   <p>Este <span>workshop</span> é uma oportunidade única para aprender sobre 
+   <span>programação</span>, <span>design</span> e <span>inovação</span> com especialistas renomados.</p>
+ </section>
 
-  <section class="descricao">
-     <div class="sobre">
-        <p>
-        <strong>Sobre o evento</strong> 
-        </p>
-        <p>
-        O  <mark>Workshop de Tecnologia</mark> traz palestrantes e temas de ponta no setor TI.
-            <!--<span style="color:rgb(16, 16, 192);">Workshop de Tecnologia</span>-->
-        </p>
-    </div>
-  </section>
-
-
-  <!-- Atrações/Palestrantes -->
-  <section class="cards-container">
-
-
-    <div class="card">
-      <h3>Palestra 1</h3>
-      <p>Inteligência Artificial</p>
-    </div>
-
-    <div class="card">
-
-      <h3>Palestra 2</h3>
-      <p>Segurança Cibernética</p>
-    </div>
-
-    <div class="card">
-      <!-- <img src="https://via.placeholder.com/150" alt="Palestrante 3"> -->
-      <h3>Palestra 3</h3>
-      <p>Desenvolvimento Web</p>
-    </div>
-  </section>
+ <section class="atracoes">
+   <div class="card">
+     <img src="https://picsum.photos/100/100" alt="Palestrante1">
+     <h3>Ana Souza</h3>
+     <p>Especialista em Front-end</p>
+   </div>
+   <div class="card">
+     <img src="https://picsum.photos/100/100" alt="Palestrante2">
+     <h3>Carlos Lima</h3>
+     <p>Desenvolvedor Back-end</p>
+   </div>
+   <div class="card">
+     <img src="https://picsum.photos/100/100" alt="Palestrante3">
+     <h3>Maria Oliveira</h3>
+     <p>UI/UX Designer</p>
+   </div>
+ </section>
 </body>
 </html>

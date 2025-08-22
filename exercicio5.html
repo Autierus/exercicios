@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Landing Page</title>
+ <style>
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ body {
+   font-family: Arial, sans-serif;
+   background: #f8f8f8;
+ }
+ header {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   background: #333;
+   color: white;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 2rem;
+   z-index: 1000;
+ }
+ header nav a {
+   color: white;
+   margin-left: 1rem;
+   text-decoration: none;
+ }
+ header button {
+   background: #ff9800;
+   border: none;
+   padding: 0.5rem 1rem;
+   border-radius: 5px;
+   color: white;
+   cursor: pointer;
+ }
+ .hero {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   padding: 2rem;
+   background: url("https://via.placeholder.com/1200x600") no-repeat center/cover;
+   color: white;
+   text-shadow: 1px 1px 2px black;
+ }
+ .beneficios {
+   display: flex;
+   gap: 1rem;
+   padding: 3rem 2rem;
+   flex-wrap: wrap;
+   max-width: 1200px;
+   margin: auto;
+ }
+ .card {
+   flex: 1;
+   min-width: 250px;
+   background: white;
+   padding: 1.5rem;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+   text-align: center;
+ }
+ @media (max-width: 768px) {
+   .beneficios {
+     flex-direction: column;
+   }
+ }
+ </style>
+</head>
+<body>
+ <header>
+   <h1>Minha Startup</h1>
+   <nav>
+     <a href="#">Início</a>
+     <a href="#">Serviços</a>
+     <a href="#">Contato</a>
+   </nav>
+   <button>Fale Conosco</button>
+ </header>
+
+ <section class="hero">
+   <h2>Transforme sua ideia em realidade</h2>
+   <p>Com a <span>tecnologia</span> certa, tudo é possível.</p>
+ </section>
+
+ <section class="beneficios">
+   <div class="card">
+     <h3>🚀 Agilidade</h3>
+     <p>Projetos desenvolvidos com rapidez e eficiência.</p>
+   </div>
+   <div class="card">
+     <h3>🔒 Segurança</h3>
+     <p>Seus dados protegidos com tecnologia de ponta.</p>
+   </div>
+   <div class="card">
+     <h3>🌍 Escalabilidade</h3>
+     <p>Plataformas preparadas para crescer com você.</p>
+   </div>
+ </section>
+</body>
+</html>
